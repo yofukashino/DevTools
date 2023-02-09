@@ -30,7 +30,7 @@ export const HBCM = (window.HomeButtonContextMenuApi ||= new (class HomeButtonCo
   }
   openContextMenu(event) {
     const HomeButtonContextMenuItems = this.items.size
-      ? Array.from(this.items.values()).sort((a, b) => a.label.localeCompare(b.label))
+      ? Array.from(this.items.values()).sort((a, b) => a?.props?.label?.localeCompare(b.label))
       : [
           <MenuItem
             {...{
