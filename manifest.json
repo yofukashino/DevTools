@@ -7,13 +7,13 @@
     "discordID": "1025214794766221384",
     "github": "Tharki-God"
   },
-  "version": "0.9.4",
+  "version": "0.9.5",
   "updater": {
     "type": "github",
     "id": "Tharki-God/DevTools"
   },
   "license": "MIT",
   "type": "replugged-plugin",
-  "renderer": "src/index.jsx",
-  "plaintextPatches": "src/plaintextPatches.jsx"
+  "renderer": "src/index.ts",
+  "plaintextPatches": "src/plaintextPatches.ts"
 }

@@ -1,6 +1,6 @@
-/* eslint-disable new-cap */
 import { common, components } from "replugged";
-import * as Icons from "./Icons.jsx";
+import * as Icons from "./Icons";
+import * as Types from "../types";
 const {
   ContextMenu: { MenuItem },
 } = components;
@@ -10,8 +10,8 @@ export const DevToolsMenuItem = (
     {...{
       label: "Open DevTools",
       id: "dev-tools",
-      icon: () => Icons.Tools("20", "20"),
-      action: () => {
+      icon: (): Types.ReactElement => Icons.tools("20", "20"),
+      action: (): void => {
         fluxDispatcher.dispatch({
           type: "DEV_TOOLS_SETTINGS_UPDATE",
           settings: {
@@ -23,4 +23,4 @@ export const DevToolsMenuItem = (
       },
     }}
   />
-);
+) as Types.ReactElement;

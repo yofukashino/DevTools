@@ -4,14 +4,14 @@ export const PluginLogger = Logger.plugin("DevTools");
 
 export const PluginInjector = new Injector();
 
-import { DevToolsMenuItem } from "./Components/MenuItem.jsx";
+import { DevToolsMenuItem } from "./Components/MenuItem";
 
-import { HBCM } from "./lib/HomeButtonContextMenuApi.jsx";
+import { HBCM } from "./lib/HomeButtonContextMenuApi";
 
-export const start = () => {
+export const start = (): void => {
   HBCM.addItem("DevTools", DevToolsMenuItem);
 };
 
-export const stop = () => {
+export const stop = (): void => {
   HBCM.removeItem("DevTools");
 };
