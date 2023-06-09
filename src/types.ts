@@ -1,6 +1,6 @@
 import { types as DefaultTypes } from "replugged";
 export { types as DefaultTypes } from "replugged";
-export { ReactElement, ComponentClass, UIEvent } from "react";
+export { ReactElement, ComponentClass, MouseEvent } from "react";
 import { ReactElement } from "react";
 declare global {
   interface Window {
