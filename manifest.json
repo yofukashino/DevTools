@@ -7,10 +7,10 @@
     "discordID": "1025214794766221384",
     "github": "Tharki-God"
   },
-  "version": "0.9.7",
+  "version": "0.9.8",
   "updater": {
-    "type": "github",
-    "id": "Tharki-God/DevTools"
+    "type": "store",
+    "id": "dev.tharki.DevTools"
   },
   "license": "MIT",
   "type": "replugged-plugin",
