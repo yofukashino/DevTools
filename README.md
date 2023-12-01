@@ -4,14 +4,14 @@ Get an option to open Discord's DevTools by right clicking on the home button.
 
 These are not normal browser devtools.
 
-Direct Download Link: [dev.tharki.DevTools.asar](https://github.com/Tharki-God/DevTools/releases/latest/download/dev.tharki.DevTools.asar)
+Direct Download Link: [dev.tharki.DevTools.asar](https://github.com/TharkiDev/DevTools/releases/latest/download/dev.tharki.DevTools.asar)
 
 Install Link:
 
 
 [![Install in Replugged](https://img.shields.io/badge/-Install%20in%20Replugged-blue?style=for-the-badge&logo=none)](https://replugged.dev/install?identifier=dev.tharki.DevTools)
 
-![image](https://tharki-god.github.io/files-random-host/bdpluginsassets/devtools.png)
+![image](https://TharkiDev.github.io/files-random-host/bdpluginsassets/devtools.png)
 
 > For issues related to plugin either DM the dev or ask in support server listed below.
 >

@@ -3,11 +3,11 @@
   "name": "DevTools",
   "description": "Get an option to open Discord's DevTools by right clicking on the home button (These are not normal browser devtools).",
   "image": "https://i.imgur.com/lU6XfK2.png",
-  "source": "https://github.com/Tharki-God/DevTools",
+  "source": "https://github.com/TharkiDev/DevTools",
   "author": {
     "name": "Ahlawat",
     "discordID": "1025214794766221384",
-    "github": "Tharki-God"
+    "github": "TharkiDev"
   },
   "version": "1.0.0",
   "updater": {

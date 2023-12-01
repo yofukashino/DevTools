@@ -1,16 +1,12 @@
-import { common, components } from "replugged";
-import * as Icons from "./Icons";
-import * as Types from "../types";
-const {
-  ContextMenu: { MenuItem },
-} = components;
-const { fluxDispatcher } = common;
-export const DevToolsMenuItem = (
-  <MenuItem
+import { fluxDispatcher } from "replugged/common";
+import { ContextMenu } from "replugged/components";
+import Icons from "./Icons";
+export default (
+  <ContextMenu.MenuItem
     {...{
       label: "Open DevTools",
       id: "dev-tools",
-      icon: (): Types.ReactElement => Icons.tools("20", "20"),
+      icon: (): React.ReactElement => <Icons.tools width={20} height={20} />,
       action: (): void => {
         fluxDispatcher.dispatch({
           type: "DEV_TOOLS_SETTINGS_UPDATE",
@@ -23,4 +19,4 @@ export const DevToolsMenuItem = (
       },
     }}
   />
-) as Types.ReactElement;
+) as React.ReactElement;
