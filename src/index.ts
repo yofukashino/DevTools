@@ -9,9 +9,9 @@ import DevToolsMenuItem from "./Components/MenuItem";
 import HBCM from "./lib/HomeButtonContextMenuApi";
 
 export const start = (): void => {
-  HBCM.addItem("DevTools", DevToolsMenuItem);
+  HBCM.getAPI().addItem("DevTools", DevToolsMenuItem);
 };
 
 export const stop = (): void => {
-  HBCM.removeItem("DevTools");
+  HBCM.getAPI().removeItem("DevTools");
 };
