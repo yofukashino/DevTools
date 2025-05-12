@@ -1,8 +1,34 @@
 import { types } from "replugged";
 import type HBCM from "./lib/HomeButtonContextMenuApi";
+import { Store } from "replugged/dist/renderer/modules/common/flux";
+
 export namespace Types {
   export import DefaultTypes = types;
   export type GenericModule = Record<string, DefaultTypes.AnyFunction>;
+  export interface AccountUtils {
+    clearScrollPosition: (section: string) => void;
+    clearSubsection: (section: string) => void;
+    close: () => void;
+    init: (section: string, subSection: string) => void;
+    open: (id: string) => void;
+    reset: () => void;
+    saveAccountChanges: (
+      accountChanges: Record<string, unknown>,
+      props: { close: () => void },
+    ) => void;
+    setSection: (section: string, subSection: string) => void;
+    submitComplete: () => void;
+    updateAccount: (settings: unknown) => void;
+  }
+  export interface DeveloperExperimentStore extends Store {
+    isDeveloper: boolean;
+    getExperimentDescriptor: () => unknown;
+  }
+  export interface Modules {
+    loadModules?: () => Promise<void>;
+    AccountUtils?: AccountUtils;
+    DeveloperExperimentStore?: DeveloperExperimentStore;
+  }
 }
 export default Types;
 
