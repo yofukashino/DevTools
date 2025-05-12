@@ -8,8 +8,12 @@ import DevToolsMenuItem from "./Components/MenuItem";
 
 import HBCM from "./lib/HomeButtonContextMenuApi";
 
+import Modules from "./lib/requiredModules";
+
 export const start = (): void => {
-  HBCM.getAPI().addItem("DevTools", DevToolsMenuItem);
+  void Modules.loadModules()
+    .then(() => HBCM.getAPI().addItem("DevTools", DevToolsMenuItem))
+    .catch((err) => PluginLogger.error(err));
 };
 
 export const stop = (): void => {
